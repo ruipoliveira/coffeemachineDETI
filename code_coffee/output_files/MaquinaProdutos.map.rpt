@@ -1,0 +1,791 @@
+Analysis & Synthesis report for MaquinaProdutos
+Tue Jun 03 12:30:13 2014
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |maquinaDeCafe|LogicProdutos:escolhaproduto|PS
+  9. State Machine - |maquinaDeCafe|LogicTroco:MoedasACair|PS
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: FreqDivider:clockMoedasACair
+ 15. Parameter Settings for User Entity Instance: DebounceUnit:key0
+ 16. Parameter Settings for User Entity Instance: DebounceUnit:key1
+ 17. Parameter Settings for User Entity Instance: DebounceUnit:key2
+ 18. Parameter Settings for User Entity Instance: DebounceUnit:key3
+ 19. Parameter Settings for User Entity Instance: FreqDivider:time_resetauto
+ 20. Parameter Settings for User Entity Instance: FreqDivider:clock_acucar
+ 21. Port Connectivity Checks: "FreqDivider:clock_acucar"
+ 22. Port Connectivity Checks: "LogicProdutos:escolhaproduto"
+ 23. Port Connectivity Checks: "FreqDivider:clockMoedasACair"
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Jun 03 12:30:12 2014      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; MaquinaProdutos                            ;
+; Top-level Entity Name              ; maquinaDeCafe                              ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 685                                        ;
+;     Total combinational functions  ; 673                                        ;
+;     Dedicated logic registers      ; 278                                        ;
+; Total registers                    ; 278                                        ;
+; Total pins                         ; 105                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; maquinaDeCafe      ; MaquinaProdutos    ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; Bin7SegDecoder.vhd               ; yes             ; User VHDL File  ; C:/Users/Rui Oliveira/Desktop/trabalhofinal_maquinadecafes/Bin7SegDecoder.vhd ;         ;
+; DebounceUnit.vhd                 ; yes             ; User VHDL File  ; C:/Users/Rui Oliveira/Desktop/trabalhofinal_maquinadecafes/DebounceUnit.vhd   ;         ;
+; FreqDivider.vhd                  ; yes             ; User VHDL File  ; C:/Users/Rui Oliveira/Desktop/trabalhofinal_maquinadecafes/FreqDivider.vhd    ;         ;
+; LogicAcucar.vhd                  ; yes             ; User VHDL File  ; C:/Users/Rui Oliveira/Desktop/trabalhofinal_maquinadecafes/LogicAcucar.vhd    ;         ;
+; LogicProdutos.vhd                ; yes             ; User VHDL File  ; C:/Users/Rui Oliveira/Desktop/trabalhofinal_maquinadecafes/LogicProdutos.vhd  ;         ;
+; LogicTroco.vhd                   ; yes             ; User VHDL File  ; C:/Users/Rui Oliveira/Desktop/trabalhofinal_maquinadecafes/LogicTroco.vhd     ;         ;
+; PEncAdapt.vhd                    ; yes             ; User VHDL File  ; C:/Users/Rui Oliveira/Desktop/trabalhofinal_maquinadecafes/PEncAdapt.vhd      ;         ;
+; maquinaDeCafe.vhd                ; yes             ; User VHDL File  ; C:/Users/Rui Oliveira/Desktop/trabalhofinal_maquinadecafes/maquinaDeCafe.vhd  ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 685            ;
+;                                             ;                ;
+; Total combinational functions               ; 673            ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 295            ;
+;     -- 3 input functions                    ; 90             ;
+;     -- <=2 input functions                  ; 288            ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 464            ;
+;     -- arithmetic mode                      ; 209            ;
+;                                             ;                ;
+; Total registers                             ; 278            ;
+;     -- Dedicated logic registers            ; 278            ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 105            ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 253            ;
+; Total fan-out                               ; 3150           ;
+; Average fan-out                             ; 2.71           ;
++---------------------------------------------+----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                          ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Library Name ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
+; |maquinaDeCafe                             ; 673 (1)           ; 278 (0)      ; 0           ; 0            ; 0       ; 0         ; 105  ; 0            ; |maquinaDeCafe                                       ; work         ;
+;    |Bin7SegDecoder:MoedasACair_Displayesq| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|Bin7SegDecoder:MoedasACair_Displayesq ; work         ;
+;    |Bin7SegDecoder:atual_esqe|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|Bin7SegDecoder:atual_esqe             ; work         ;
+;    |Bin7SegDecoder:atual_meio|             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|Bin7SegDecoder:atual_meio             ; work         ;
+;    |Bin7SegDecoder:produtodisplay|         ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|Bin7SegDecoder:produtodisplay         ; work         ;
+;    |Bin7SegDecoder:troco_esqe|             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|Bin7SegDecoder:troco_esqe             ; work         ;
+;    |DebounceUnit:key0|                     ; 43 (43)           ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|DebounceUnit:key0                     ; work         ;
+;    |DebounceUnit:key1|                     ; 43 (43)           ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|DebounceUnit:key1                     ; work         ;
+;    |DebounceUnit:key2|                     ; 43 (43)           ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|DebounceUnit:key2                     ; work         ;
+;    |DebounceUnit:key3|                     ; 43 (43)           ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|DebounceUnit:key3                     ; work         ;
+;    |FreqDivider:clockMoedasACair|          ; 59 (59)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|FreqDivider:clockMoedasACair          ; work         ;
+;    |FreqDivider:clock_acucar|              ; 56 (56)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|FreqDivider:clock_acucar              ; work         ;
+;    |FreqDivider:time_resetauto|            ; 59 (59)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|FreqDivider:time_resetauto            ; work         ;
+;    |LogicAcucar:acucar|                    ; 12 (12)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|LogicAcucar:acucar                    ; work         ;
+;    |LogicProdutos:escolhaproduto|          ; 232 (232)         ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|LogicProdutos:escolhaproduto          ; work         ;
+;    |LogicTroco:MoedasACair|                ; 54 (54)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|LogicTroco:MoedasACair                ; work         ;
+;    |PEncAdapt:codificadorPr|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |maquinaDeCafe|PEncAdapt:codificadorPr               ; work         ;
++--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |maquinaDeCafe|LogicProdutos:escolhaproduto|PS                                                                                                                                                           ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+--------+--------+--------+-------+
+; Name    ; PS.E210 ; PS.E200 ; PS.E190 ; PS.E180 ; PS.E170 ; PS.E160 ; PS.E150 ; PS.E140 ; PS.E130 ; PS.E120 ; PS.E110 ; PS.E100 ; PS.E90 ; PS.E80 ; PS.E70 ; PS.E60 ; PS.E50 ; PS.E40 ; PS.E30 ; PS.E20 ; PS.E10 ; PS.E0 ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+--------+--------+--------+-------+
+; PS.E0   ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ;
+; PS.E10  ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 1     ;
+; PS.E20  ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 1     ;
+; PS.E30  ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 1     ;
+; PS.E40  ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E50  ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E60  ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E70  ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E80  ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E90  ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E100 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E110 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E120 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E130 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E140 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E150 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E160 ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E170 ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E180 ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E190 ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E200 ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E210 ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+--------+--------+--------+--------+--------+--------+--------+--------+--------+-------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |maquinaDeCafe|LogicTroco:MoedasACair|PS                                                                 ;
++----------------+----------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+-------+
+; Name           ; PS.E20especial ; PS.E90 ; PS.E80 ; PS.E70 ; PS.E60 ; PS.E50 ; PS.E40 ; PS.E30 ; PS.E20 ; PS.E10 ; PS.E0 ;
++----------------+----------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+-------+
+; PS.E0          ; 0              ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0     ;
+; PS.E10         ; 0              ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 1     ;
+; PS.E20         ; 0              ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 1     ;
+; PS.E30         ; 0              ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 1     ;
+; PS.E40         ; 0              ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E50         ; 0              ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E60         ; 0              ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E70         ; 0              ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E80         ; 0              ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E90         ; 0              ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
+; PS.E20especial ; 1              ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1     ;
++----------------+----------------+--------+--------+--------+--------+--------+--------+--------+--------+--------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                   ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                    ; Free of Timing Hazards ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+; LogicProdutos:escolhaproduto|atual[4]               ; LogicProdutos:escolhaproduto|atual[7]  ; yes                    ;
+; LogicProdutos:escolhaproduto|atual[5]               ; LogicProdutos:escolhaproduto|atual[7]  ; yes                    ;
+; LogicProdutos:escolhaproduto|atual[6]               ; LogicProdutos:escolhaproduto|atual[7]  ; yes                    ;
+; LogicProdutos:escolhaproduto|atual[7]               ; LogicProdutos:escolhaproduto|atual[7]  ; yes                    ;
+; LogicProdutos:escolhaproduto|atual[9]               ; LogicProdutos:escolhaproduto|atual[7]  ; yes                    ;
+; LogicProdutos:escolhaproduto|atual[8]               ; LogicProdutos:escolhaproduto|atual[7]  ; yes                    ;
+; LogicProdutos:escolhaproduto|troco[4]               ; LogicProdutos:escolhaproduto|troco[7]  ; yes                    ;
+; LogicProdutos:escolhaproduto|troco[5]               ; LogicProdutos:escolhaproduto|troco[7]  ; yes                    ;
+; LogicProdutos:escolhaproduto|troco[6]               ; LogicProdutos:escolhaproduto|troco[7]  ; yes                    ;
+; LogicProdutos:escolhaproduto|troco[7]               ; LogicProdutos:escolhaproduto|troco[7]  ; yes                    ;
+; LogicProdutos:escolhaproduto|produto_A              ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|produto_B              ; LogicProdutos:escolhaproduto|produto_A ; yes                    ;
+; LogicProdutos:escolhaproduto|produto_C              ; LogicProdutos:escolhaproduto|produto_A ; yes                    ;
+; LogicProdutos:escolhaproduto|produto_D              ; LogicProdutos:escolhaproduto|Equal4    ; yes                    ;
+; LogicTroco:MoedasACair|NS.E0_572                    ; LogicTroco:MoedasACair|Selector11      ; yes                    ;
+; LogicTroco:MoedasACair|NS.E20especial_317           ; LogicTroco:MoedasACair|Selector11      ; yes                    ;
+; LogicTroco:MoedasACair|NS.E10_545                   ; LogicTroco:MoedasACair|Selector11      ; yes                    ;
+; LogicTroco:MoedasACair|NS.E20_518                   ; LogicTroco:MoedasACair|Selector11      ; yes                    ;
+; LogicTroco:MoedasACair|NS.E30_491                   ; LogicTroco:MoedasACair|Selector11      ; yes                    ;
+; LogicTroco:MoedasACair|NS.E40_464                   ; LogicTroco:MoedasACair|Selector11      ; yes                    ;
+; LogicProdutos:escolhaproduto|reset_acucar           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E0_2100             ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E20_2076            ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E40_2052            ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E60_2028            ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E80_2004            ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E100_1980           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E120_1956           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E140_1932           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E160_1908           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E180_1884           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E200_1860           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E10_2088            ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E30_2064            ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E50_2040            ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E70_2016            ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E90_1992            ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E110_1968           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E130_1944           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E210_1848           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E150_1920           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E170_1896           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicProdutos:escolhaproduto|NS.E190_1872           ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; LogicTroco:MoedasACair|NS.E50_437                   ; GND                                    ; yes                    ;
+; LogicTroco:MoedasACair|NS.E60_413                   ; GND                                    ; yes                    ;
+; LogicTroco:MoedasACair|NS.E70_389                   ; GND                                    ; yes                    ;
+; LogicTroco:MoedasACair|NS.E80_365                   ; GND                                    ; yes                    ;
+; LogicTroco:MoedasACair|NS.E90_341                   ; GND                                    ; yes                    ;
+; LogicProdutos:escolhaproduto|saida                  ; PEncAdapt:codificadorPr|decodedOut[2]  ; yes                    ;
+; Number of user-specified and inferred latches = 49  ;                                        ;                        ;
++-----------------------------------------------------+----------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                            ;
++---------------------------------------+-------------------------------------------------------+
+; Register name                         ; Reason for Removal                                    ;
++---------------------------------------+-------------------------------------------------------+
+; FreqDivider:clock_acucar|s_counter[0] ; Merged with FreqDivider:clockMoedasACair|s_counter[0] ;
+; FreqDivider:clock_acucar|s_counter[1] ; Merged with FreqDivider:clockMoedasACair|s_counter[1] ;
+; Total Number of Removed Registers = 2 ;                                                       ;
++---------------------------------------+-------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 278   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 124   ;
+; Number of registers using Asynchronous Clear ; 134   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 43    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |maquinaDeCafe|DebounceUnit:key3|s_debounceCnt[29]   ;
+; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |maquinaDeCafe|DebounceUnit:key2|s_debounceCnt[2]    ;
+; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |maquinaDeCafe|DebounceUnit:key1|s_debounceCnt[2]    ;
+; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |maquinaDeCafe|DebounceUnit:key0|s_debounceCnt[9]    ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |maquinaDeCafe|LogicAcucar:acucar|s_shiftregister[5] ;
+; 3:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; No         ; |maquinaDeCafe|LogicProdutos:escolhaproduto|PS       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |maquinaDeCafe|LogicProdutos:escolhaproduto|NS       ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |maquinaDeCafe|LogicProdutos:escolhaproduto|NS.E0    ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |maquinaDeCafe|LogicProdutos:escolhaproduto|NS.E190  ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |maquinaDeCafe|LogicProdutos:escolhaproduto|NS.E210  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqDivider:clockMoedasACair ;
++----------------+----------+-----------------------------------------------+
+; Parameter Name ; Value    ; Type                                          ;
++----------------+----------+-----------------------------------------------+
+; k              ; 65000000 ; Signed Integer                                ;
++----------------+----------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DebounceUnit:key0 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; clkfrekhz      ; 50000 ; Signed Integer                        ;
+; blindmsec      ; 300   ; Signed Integer                        ;
+; inpol          ; '0'   ; Enumerated                            ;
+; outpol         ; '1'   ; Enumerated                            ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DebounceUnit:key1 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; clkfrekhz      ; 50000 ; Signed Integer                        ;
+; blindmsec      ; 300   ; Signed Integer                        ;
+; inpol          ; '0'   ; Enumerated                            ;
+; outpol         ; '1'   ; Enumerated                            ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DebounceUnit:key2 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; clkfrekhz      ; 50000 ; Signed Integer                        ;
+; blindmsec      ; 300   ; Signed Integer                        ;
+; inpol          ; '0'   ; Enumerated                            ;
+; outpol         ; '1'   ; Enumerated                            ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DebounceUnit:key3 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; clkfrekhz      ; 50000 ; Signed Integer                        ;
+; blindmsec      ; 300   ; Signed Integer                        ;
+; inpol          ; '0'   ; Enumerated                            ;
+; outpol         ; '1'   ; Enumerated                            ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqDivider:time_resetauto ;
++----------------+----------+---------------------------------------------+
+; Parameter Name ; Value    ; Type                                        ;
++----------------+----------+---------------------------------------------+
+; k              ; 45000000 ; Signed Integer                              ;
++----------------+----------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqDivider:clock_acucar ;
++----------------+----------+-------------------------------------------+
+; Parameter Name ; Value    ; Type                                      ;
++----------------+----------+-------------------------------------------+
+; k              ; 50000000 ; Signed Integer                            ;
++----------------+----------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "FreqDivider:clock_acucar" ;
++--------+-------+----------+--------------------------+
+; Port   ; Type  ; Severity ; Details                  ;
++--------+-------+----------+--------------------------+
+; enable ; Input ; Info     ; Stuck at VCC             ;
++--------+-------+----------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "LogicProdutos:escolhaproduto"                                                        ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; valor ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "FreqDivider:clockMoedasACair" ;
++--------+-------+----------+------------------------------+
+; Port   ; Type  ; Severity ; Details                      ;
++--------+-------+----------+------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                 ;
++--------+-------+----------+------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Tue Jun 03 12:30:09 2014
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MaquinaProdutos -c MaquinaProdutos
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 2 design units, including 1 entities, in source file bin7segdecoder.vhd
+    Info (12022): Found design unit 1: Bin7SegDecoder-Behavioral
+    Info (12023): Found entity 1: Bin7SegDecoder
+Info (12021): Found 2 design units, including 1 entities, in source file debounceunit.vhd
+    Info (12022): Found design unit 1: DebounceUnit-RTL
+    Info (12023): Found entity 1: DebounceUnit
+Info (12021): Found 2 design units, including 1 entities, in source file freqdivider.vhd
+    Info (12022): Found design unit 1: FreqDivider-Behavioral
+    Info (12023): Found entity 1: FreqDivider
+Info (12021): Found 2 design units, including 1 entities, in source file logicacucar.vhd
+    Info (12022): Found design unit 1: LogicAcucar-Behavioral
+    Info (12023): Found entity 1: LogicAcucar
+Info (12021): Found 2 design units, including 1 entities, in source file logicprodutos.vhd
+    Info (12022): Found design unit 1: LogicProdutos-RTL
+    Info (12023): Found entity 1: LogicProdutos
+Info (12021): Found 2 design units, including 1 entities, in source file logictroco.vhd
+    Info (12022): Found design unit 1: LogicTroco-RTL
+    Info (12023): Found entity 1: LogicTroco
+Info (12021): Found 2 design units, including 1 entities, in source file pencadapt.vhd
+    Info (12022): Found design unit 1: PEncAdapt-BehavEquations
+    Info (12023): Found entity 1: PEncAdapt
+Info (12021): Found 2 design units, including 1 entities, in source file maquinadecafe.vhd
+    Info (12022): Found design unit 1: maquinaDeCafe-Shell
+    Info (12023): Found entity 1: maquinaDeCafe
+Info (12127): Elaborating entity "maquinaDeCafe" for the top level hierarchy
+Warning (10873): Using initial value X (don't care) for net "LEDR[17..4]" at maquinaDeCafe.vhd(15)
+Info (12129): Elaborating entity "FreqDivider" using architecture "A:behavioral" for hierarchy "FreqDivider:clockMoedasACair"
+Info (12129): Elaborating entity "LogicTroco" using architecture "A:rtl" for hierarchy "LogicTroco:MoedasACair"
+Warning (10492): VHDL Process Statement warning at LogicTroco.vhd(32): signal "troco" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LogicTroco.vhd(34): signal "troco" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LogicTroco.vhd(36): signal "troco" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LogicTroco.vhd(38): signal "troco" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LogicTroco.vhd(40): signal "troco" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LogicTroco.vhd(42): signal "troco" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LogicTroco.vhd(44): signal "troco" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LogicTroco.vhd(46): signal "troco" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LogicTroco.vhd(48): signal "troco" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at LogicTroco.vhd(50): signal "troco" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at LogicTroco.vhd(28): inferring latch(es) for signal or variable "NS", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "NS.E20especial" at LogicTroco.vhd(28)
+Info (10041): Inferred latch for "NS.E90" at LogicTroco.vhd(28)
+Info (10041): Inferred latch for "NS.E80" at LogicTroco.vhd(28)
+Info (10041): Inferred latch for "NS.E70" at LogicTroco.vhd(28)
+Info (10041): Inferred latch for "NS.E60" at LogicTroco.vhd(28)
+Info (10041): Inferred latch for "NS.E50" at LogicTroco.vhd(28)
+Info (10041): Inferred latch for "NS.E40" at LogicTroco.vhd(28)
+Info (10041): Inferred latch for "NS.E30" at LogicTroco.vhd(28)
+Info (10041): Inferred latch for "NS.E20" at LogicTroco.vhd(28)
+Info (10041): Inferred latch for "NS.E10" at LogicTroco.vhd(28)
+Info (10041): Inferred latch for "NS.E0" at LogicTroco.vhd(28)
+Info (12129): Elaborating entity "Bin7SegDecoder" using architecture "A:behavioral" for hierarchy "Bin7SegDecoder:MoedasACair_Displayesq"
+Info (12129): Elaborating entity "DebounceUnit" using architecture "A:rtl" for hierarchy "DebounceUnit:key0"
+Info (12129): Elaborating entity "PEncAdapt" using architecture "A:behavequations" for hierarchy "PEncAdapt:codificadorPr"
+Info (12129): Elaborating entity "FreqDivider" using architecture "A:behavioral" for hierarchy "FreqDivider:time_resetauto"
+Info (12129): Elaborating entity "LogicProdutos" using architecture "A:rtl" for hierarchy "LogicProdutos:escolhaproduto"
+Warning (10541): VHDL Signal Declaration warning at LogicProdutos.vhd(10): used implicit default value for signal "valor" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10631): VHDL Process Statement warning at LogicProdutos.vhd(58): inferring latch(es) for signal or variable "NS", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at LogicProdutos.vhd(58): inferring latch(es) for signal or variable "produto_A", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at LogicProdutos.vhd(58): inferring latch(es) for signal or variable "produto_B", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at LogicProdutos.vhd(58): inferring latch(es) for signal or variable "produto_C", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at LogicProdutos.vhd(58): inferring latch(es) for signal or variable "produto_D", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at LogicProdutos.vhd(58): inferring latch(es) for signal or variable "saida", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at LogicProdutos.vhd(58): inferring latch(es) for signal or variable "reset_acucar", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at LogicProdutos.vhd(58): inferring latch(es) for signal or variable "troco", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at LogicProdutos.vhd(58): inferring latch(es) for signal or variable "atual", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "atual[0]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "atual[1]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "atual[2]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "atual[3]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "atual[4]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "atual[5]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "atual[6]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "atual[7]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "atual[8]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "atual[9]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "atual[10]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "atual[11]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "troco[0]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "troco[1]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "troco[2]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "troco[3]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "troco[4]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "troco[5]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "troco[6]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "troco[7]" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "reset_acucar" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "saida" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "produto_D" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "produto_C" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "produto_B" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "produto_A" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E210" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E200" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E190" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E180" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E170" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E160" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E150" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E140" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E130" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E120" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E110" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E100" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E90" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E80" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E70" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E60" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E50" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E40" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E30" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E20" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E10" at LogicProdutos.vhd(58)
+Info (10041): Inferred latch for "NS.E0" at LogicProdutos.vhd(58)
+Info (12129): Elaborating entity "FreqDivider" using architecture "A:behavioral" for hierarchy "FreqDivider:clock_acucar"
+Info (12129): Elaborating entity "LogicAcucar" using architecture "A:behavioral" for hierarchy "LogicAcucar:acucar"
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "LogicProdutos:escolhaproduto|saida" merged with LATCH primitive "LogicProdutos:escolhaproduto|reset_acucar"
+Warning (13012): Latch LogicProdutos:escolhaproduto|atual[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicProdutos:escolhaproduto|PS.E140
+Warning (13012): Latch LogicProdutos:escolhaproduto|atual[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|atual[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicProdutos:escolhaproduto|PS.E140
+Warning (13012): Latch LogicProdutos:escolhaproduto|atual[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|atual[9] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicProdutos:escolhaproduto|WideOr55
+Warning (13012): Latch LogicProdutos:escolhaproduto|atual[8] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|troco[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicProdutos:escolhaproduto|PS.E130
+Warning (13012): Latch LogicProdutos:escolhaproduto|troco[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicProdutos:escolhaproduto|PS.E140
+Warning (13012): Latch LogicProdutos:escolhaproduto|troco[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicProdutos:escolhaproduto|PS.E160
+Warning (13012): Latch LogicProdutos:escolhaproduto|troco[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicProdutos:escolhaproduto|WideOr55
+Warning (13012): Latch LogicProdutos:escolhaproduto|produto_A has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|produto_B has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[1]
+Warning (13012): Latch LogicProdutos:escolhaproduto|produto_C has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|produto_D has unsafe behavior
+    Warning (13013): Ports ENA and CLR on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicTroco:MoedasACair|NS.E0_572 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicTroco:MoedasACair|PS.E0
+Warning (13012): Latch LogicTroco:MoedasACair|NS.E10_545 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicTroco:MoedasACair|PS.E0
+Warning (13012): Latch LogicTroco:MoedasACair|NS.E20_518 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicTroco:MoedasACair|PS.E0
+Warning (13012): Latch LogicTroco:MoedasACair|NS.E30_491 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicTroco:MoedasACair|PS.E0
+Warning (13012): Latch LogicTroco:MoedasACair|NS.E40_464 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal LogicTroco:MoedasACair|PS.E0
+Warning (13012): Latch LogicProdutos:escolhaproduto|reset_acucar has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E0_2100 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E20_2076 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E40_2052 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E60_2028 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E80_2004 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E100_1980 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E120_1956 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E140_1932 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E160_1908 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E180_1884 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E200_1860 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E10_2088 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E30_2064 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E50_2040 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E70_2016 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E90_1992 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E110_1968 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E130_1944 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E210_1848 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E150_1920 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E170_1896 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch LogicProdutos:escolhaproduto|NS.E190_1872 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX0[0]" is stuck at GND
+    Warning (13410): Pin "HEX0[1]" is stuck at GND
+    Warning (13410): Pin "HEX0[2]" is stuck at GND
+    Warning (13410): Pin "HEX0[3]" is stuck at GND
+    Warning (13410): Pin "HEX0[4]" is stuck at GND
+    Warning (13410): Pin "HEX0[5]" is stuck at GND
+    Warning (13410): Pin "HEX0[6]" is stuck at VCC
+    Warning (13410): Pin "HEX2[1]" is stuck at GND
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC
+    Warning (13410): Pin "HEX6[0]" is stuck at GND
+    Warning (13410): Pin "HEX6[1]" is stuck at GND
+    Warning (13410): Pin "HEX6[2]" is stuck at GND
+    Warning (13410): Pin "HEX6[3]" is stuck at GND
+    Warning (13410): Pin "HEX6[4]" is stuck at GND
+    Warning (13410): Pin "HEX6[5]" is stuck at GND
+    Warning (13410): Pin "HEX6[6]" is stuck at VCC
+    Warning (13410): Pin "LEDR[4]" is stuck at GND
+    Warning (13410): Pin "LEDR[5]" is stuck at GND
+    Warning (13410): Pin "LEDR[6]" is stuck at GND
+    Warning (13410): Pin "LEDR[7]" is stuck at GND
+    Warning (13410): Pin "LEDR[8]" is stuck at GND
+    Warning (13410): Pin "LEDR[9]" is stuck at GND
+    Warning (13410): Pin "LEDR[10]" is stuck at GND
+    Warning (13410): Pin "LEDR[11]" is stuck at GND
+    Warning (13410): Pin "LEDR[12]" is stuck at GND
+    Warning (13410): Pin "LEDR[13]" is stuck at GND
+    Warning (13410): Pin "LEDR[14]" is stuck at GND
+    Warning (13410): Pin "LEDR[15]" is stuck at GND
+    Warning (13410): Pin "LEDR[16]" is stuck at GND
+    Warning (13410): Pin "LEDR[17]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[4]"
+    Warning (15610): No output dependent on input pin "SW[5]"
+    Warning (15610): No output dependent on input pin "SW[6]"
+    Warning (15610): No output dependent on input pin "SW[7]"
+    Warning (15610): No output dependent on input pin "SW[8]"
+    Warning (15610): No output dependent on input pin "SW[9]"
+    Warning (15610): No output dependent on input pin "SW[10]"
+    Warning (15610): No output dependent on input pin "SW[11]"
+    Warning (15610): No output dependent on input pin "SW[12]"
+    Warning (15610): No output dependent on input pin "SW[13]"
+    Warning (15610): No output dependent on input pin "SW[14]"
+Info (21057): Implemented 790 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 23 input pins
+    Info (21059): Implemented 82 output pins
+    Info (21061): Implemented 685 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 150 warnings
+    Info: Peak virtual memory: 535 megabytes
+    Info: Processing ended: Tue Jun 03 12:30:13 2014
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

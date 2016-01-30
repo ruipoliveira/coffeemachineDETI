@@ -1,0 +1,121 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do MaquinaProdutos_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/Bin7SegDecoder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Bin7SegDecoder
+# -- Compiling architecture Behavioral of Bin7SegDecoder
+# vcom -93 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/DebounceUnit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DebounceUnit
+# -- Compiling architecture RTL of DebounceUnit
+# vcom -93 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/FreqDivider.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FreqDivider
+# -- Compiling architecture Behavioral of FreqDivider
+# vcom -93 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/LogicAcucar.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity LogicAcucar
+# -- Compiling architecture Behavioral of LogicAcucar
+# vcom -93 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/LogicProdutos.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity LogicProdutos
+# -- Compiling architecture RTL of LogicProdutos
+# vcom -93 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/LogicTroco.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity LogicTroco
+# -- Compiling architecture RTL of LogicTroco
+# vcom -93 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/PEncAdapt.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PEncAdapt
+# -- Compiling architecture BehavEquations of PEncAdapt
+# vcom -93 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/maquinaDeCafe.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity maquinaDeCafe
+# -- Compiling architecture Shell of maquinaDeCafe
+# -- Loading package NUMERIC_STD
+# -- Loading entity FreqDivider
+# -- Loading entity LogicTroco
+# -- Loading entity Bin7SegDecoder
+# -- Loading entity DebounceUnit
+# -- Loading entity PEncAdapt
+# -- Loading entity LogicProdutos
+# -- Loading entity LogicAcucar
+# 
+vcom -reportprogress 300 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicTroco.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TestBench_LogicTroco
+# -- Compiling architecture Stimulus of TestBench_LogicTroco
+# -- Loading package NUMERIC_STD
+# -- Loading entity LogicTroco
+vcom -reportprogress 300 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicTroco.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# ** Warning: (vcom-6) -- Waiting for lock by "Rui Oliveira@RUIOLIVEIRA-PC, pid = 5752
+# ". Lockfile is "C:/Users/Rui Oliveira/Desktop/trabalho final/simulation/modelsim/rtl_work/_lock".
+# 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TestBench_LogicTroco
+# -- Compiling architecture Stimulus of TestBench_LogicTroco
+# -- Loading package NUMERIC_STD
+# -- Loading entity LogicTroco
+vcom -reportprogress 300 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicProdutos.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TestBench_LogicProdutos
+# -- Compiling architecture Stimulus of TestBench_LogicProdutos
+# -- Loading package NUMERIC_STD
+# -- Loading entity LogicProdutos
+vcom -reportprogress 300 -work work {C:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicProdutos.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TestBench_LogicProdutos
+# -- Compiling architecture Stimulus of TestBench_LogicProdutos
+# -- Loading package NUMERIC_STD
+# -- Loading entity LogicProdutos

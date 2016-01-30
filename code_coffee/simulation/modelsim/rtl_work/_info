@@ -1,0 +1,377 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Rui Oliveira\Desktop\trabalho final\simulation\modelsim
+Ebin7segdecoder
+Z1 w1401581312
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Rui Oliveira\Desktop\trabalho final\simulation\modelsim
+Z5 8C:/Users/Rui Oliveira/Desktop/trabalho final/Bin7SegDecoder.vhd
+Z6 FC:/Users/Rui Oliveira/Desktop/trabalho final/Bin7SegDecoder.vhd
+l0
+L3
+V7dR8fl5AGf6fWYVL7DBE`2
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1401578861.733000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Rui Oliveira/Desktop/trabalho final/Bin7SegDecoder.vhd|
+Z10 !s107 C:/Users/Rui Oliveira/Desktop/trabalho final/Bin7SegDecoder.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 3dYMSIB`RHT:Cz]`UUNQn2
+!i10b 1
+Abehavioral
+R2
+R3
+Z13 DEx4 work 14 bin7segdecoder 0 22 7dR8fl5AGf6fWYVL7DBE`2
+l9
+L8
+VE2RH90kJ4@[gR=Hh2D7Vi3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 m:REEY[P[A7@a9]1ON9GG3
+!i10b 1
+Edebounceunit
+Z14 w1401581338
+Z15 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z16 8C:/Users/Rui Oliveira/Desktop/trabalho final/DebounceUnit.vhd
+Z17 FC:/Users/Rui Oliveira/Desktop/trabalho final/DebounceUnit.vhd
+l0
+L5
+VZldWh4;jH[k=>eOKBDa5g1
+R7
+31
+Z18 !s108 1401578862.228000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Rui Oliveira/Desktop/trabalho final/DebounceUnit.vhd|
+Z20 !s107 C:/Users/Rui Oliveira/Desktop/trabalho final/DebounceUnit.vhd|
+R11
+R12
+!s100 =LXe8b1ZC_H4oh89^>O102
+!i10b 1
+Artl
+R15
+R2
+R3
+Z21 DEx4 work 12 debounceunit 0 22 ZldWh4;jH[k=>eOKBDa5g1
+l21
+L17
+V_TDY8WZ;LL23Ufn^aezWh1
+R7
+31
+R18
+R19
+R20
+R11
+R12
+!s100 MfVSWO6oANOhBRCHF>5402
+!i10b 1
+Efreqdivider
+Z22 w1401581368
+R15
+R2
+R3
+R4
+Z23 8C:/Users/Rui Oliveira/Desktop/trabalho final/FreqDivider.vhd
+Z24 FC:/Users/Rui Oliveira/Desktop/trabalho final/FreqDivider.vhd
+l0
+L5
+VnoiUjkRb;?DUY3]UUleZ<0
+R7
+31
+Z25 !s108 1401578863.269000
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/Rui Oliveira/Desktop/trabalho final/FreqDivider.vhd|
+Z27 !s107 C:/Users/Rui Oliveira/Desktop/trabalho final/FreqDivider.vhd|
+R11
+R12
+!s100 =[A1nkc:hJ2mQY4>3IzPd2
+!i10b 1
+Abehavioral
+R15
+R2
+R3
+Z28 DEx4 work 11 freqdivider 0 22 noiUjkRb;?DUY3]UUleZ<0
+l15
+L12
+VKeHHhz<RRc9O7^aaEeK5`0
+R7
+31
+R25
+R26
+R27
+R11
+R12
+!s100 zDz6[Z0?o[f<KRNmfz:Z`1
+!i10b 1
+Elogicacucar
+Z29 w1401581396
+R15
+R2
+R3
+R4
+Z30 8C:/Users/Rui Oliveira/Desktop/trabalho final/LogicAcucar.vhd
+Z31 FC:/Users/Rui Oliveira/Desktop/trabalho final/LogicAcucar.vhd
+l0
+L5
+VmnO]7:T;d7gzcP59nJjmU2
+R7
+31
+Z32 !s108 1401578864.384000
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/Rui Oliveira/Desktop/trabalho final/LogicAcucar.vhd|
+Z34 !s107 C:/Users/Rui Oliveira/Desktop/trabalho final/LogicAcucar.vhd|
+R11
+R12
+!s100 zj5JJz7HCB]TViheI_U[D2
+!i10b 1
+Abehavioral
+R15
+R2
+R3
+Z35 DEx4 work 11 logicacucar 0 22 mnO]7:T;d7gzcP59nJjmU2
+l16
+L14
+V7;hWFgfiXNUh0Kl]WGSIC1
+R7
+31
+R32
+R33
+R34
+R11
+R12
+!s100 Foi]`D3j40`o2o5HmdMg=3
+!i10b 1
+Elogicprodutos
+Z36 w1401581434
+R15
+R2
+R3
+R4
+Z37 8C:/Users/Rui Oliveira/Desktop/trabalho final/LogicProdutos.vhd
+Z38 FC:/Users/Rui Oliveira/Desktop/trabalho final/LogicProdutos.vhd
+l0
+L4
+Vc=jTSUJmU6hLo03<oibM;3
+R7
+31
+Z39 !s108 1401578865.086000
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/Rui Oliveira/Desktop/trabalho final/LogicProdutos.vhd|
+Z41 !s107 C:/Users/Rui Oliveira/Desktop/trabalho final/LogicProdutos.vhd|
+R11
+R12
+!s100 @<9oCP`ol<QH1nQXbaAm92
+!i10b 1
+Artl
+R15
+R2
+R3
+Z42 DEx4 work 13 logicprodutos 0 22 c=jTSUJmU6hLo03<oibM;3
+l27
+L19
+VmTL8:<ofZf7AhjEEUn:Gl0
+R7
+31
+R39
+R40
+R41
+R11
+R12
+!s100 =bhg0;7HK9Uj2@]>1V8T22
+!i10b 1
+Elogictroco
+Z43 w1401581456
+R15
+R2
+R3
+R4
+Z44 8C:/Users/Rui Oliveira/Desktop/trabalho final/LogicTroco.vhd
+Z45 FC:/Users/Rui Oliveira/Desktop/trabalho final/LogicTroco.vhd
+l0
+L5
+V=djARW7gOhH@0n253k4Eg1
+R7
+31
+Z46 !s108 1401578865.606000
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/Rui Oliveira/Desktop/trabalho final/LogicTroco.vhd|
+Z48 !s107 C:/Users/Rui Oliveira/Desktop/trabalho final/LogicTroco.vhd|
+R11
+R12
+!s100 fi2R1=l8e6C<9lP=cI^c<2
+!i10b 1
+Artl
+R15
+R2
+R3
+Z49 DEx4 work 10 logictroco 0 22 =djARW7gOhH@0n253k4Eg1
+l16
+L12
+VX;3@9B[a^[k2ROf_HV:Rh2
+R7
+31
+R46
+R47
+R48
+R11
+R12
+!s100 nniXm7cUIMXO7gIG[0jlj0
+!i10b 1
+Emaquinadecafe
+Z50 w1401581604
+R2
+R3
+R4
+Z51 8C:/Users/Rui Oliveira/Desktop/trabalho final/maquinaDeCafe.vhd
+Z52 FC:/Users/Rui Oliveira/Desktop/trabalho final/maquinaDeCafe.vhd
+l0
+L10
+V3kO4]><AW^RBCClN6EHjn1
+R7
+31
+Z53 !s108 1401578867.060000
+Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/Rui Oliveira/Desktop/trabalho final/maquinaDeCafe.vhd|
+Z55 !s107 C:/Users/Rui Oliveira/Desktop/trabalho final/maquinaDeCafe.vhd|
+R11
+R12
+!s100 fCN>[NOegYWNi@YLHPIo]3
+!i10b 1
+Ashell
+R35
+R42
+Z56 DEx4 work 9 pencadapt 0 22 :NaA[fYhUW6XzTQ6T8Ci_0
+R21
+R13
+R49
+R15
+R28
+R2
+R3
+DEx4 work 13 maquinadecafe 0 22 3kO4]><AW^RBCClN6EHjn1
+l39
+L20
+V1eeIfM6PIQDFDnTE9g]dm0
+R7
+31
+R53
+R54
+R55
+R11
+R12
+!s100 SLV=aoBG6MM3zWj7PeiO`2
+!i10b 1
+Epencadapt
+Z57 w1401581477
+R2
+R3
+R4
+Z58 8C:/Users/Rui Oliveira/Desktop/trabalho final/PEncAdapt.vhd
+Z59 FC:/Users/Rui Oliveira/Desktop/trabalho final/PEncAdapt.vhd
+l0
+L4
+V:NaA[fYhUW6XzTQ6T8Ci_0
+R7
+31
+Z60 !s108 1401578866.617000
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/Rui Oliveira/Desktop/trabalho final/PEncAdapt.vhd|
+Z62 !s107 C:/Users/Rui Oliveira/Desktop/trabalho final/PEncAdapt.vhd|
+R11
+R12
+!s100 cz1h=C=@BgKTLJ?k_DYgo0
+!i10b 1
+Abehavequations
+R2
+R3
+R56
+l10
+L9
+Vc:fddnJE0iHmJ02ZDbKJ=1
+R7
+31
+R60
+R61
+R62
+R11
+R12
+!s100 ;f`jd2>mWFfRVO;EN3WQZ1
+!i10b 1
+Etestbench_logicprodutos
+Z63 w1401581782
+R2
+R3
+R4
+Z64 8C:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicProdutos.vhd
+Z65 FC:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicProdutos.vhd
+l0
+L4
+Vl^2J_bNXhTJbK5XMFKUM<0
+!s100 k;@HJ[1ggj?a[oiHl95kz1
+R7
+32
+!i10b 1
+Z66 !s108 1401578889.476000
+Z67 !s90 -reportprogress|300|-work|work|C:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicProdutos.vhd|
+Z68 !s107 C:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicProdutos.vhd|
+Z69 o-work work -O0
+R12
+Astimulus
+R15
+R42
+R2
+R3
+Z70 DEx4 work 23 testbench_logicprodutos 0 22 l^2J_bNXhTJbK5XMFKUM<0
+l13
+L7
+Z71 VSVPkEiGnE?T;4@H^FG@6O2
+Z72 !s100 06>4k9^T102T8^eNPe^Xb2
+R7
+32
+!i10b 1
+R66
+R67
+R68
+R69
+R12
+Etestbench_logictroco
+Z73 w1401581722
+R2
+R3
+R4
+Z74 8C:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicTroco.vhd
+Z75 FC:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicTroco.vhd
+l0
+L4
+VC;i`^BjgS[N2gaV;6d_bh1
+R7
+32
+Z76 !s108 1401578875.010000
+Z77 !s90 -reportprogress|300|-work|work|C:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicTroco.vhd|
+Z78 !s107 C:/Users/Rui Oliveira/Desktop/trabalho final/TestBench_LogicTroco.vhd|
+R69
+R12
+!s100 gzJ13QP_MUOU?`J@D2k0>3
+!i10b 1
+Astimulus
+R15
+R49
+R2
+R3
+DEx4 work 20 testbench_logictroco 0 22 C;i`^BjgS[N2gaV;6d_bh1
+l12
+L7
+VfI66]DbHL=lnPf>ZB4`hK3
+R7
+32
+R76
+R77
+R78
+R69
+R12
+!s100 gMid7FcLlo7R4c1;1l4M93
+!i10b 1

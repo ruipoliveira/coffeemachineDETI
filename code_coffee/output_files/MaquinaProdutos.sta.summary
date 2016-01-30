@@ -1,0 +1,533 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'SW[0]'
+Slack : -6.874
+TNS   : -165.303
+
+Type  : Slow 1200mV 85C Model Setup 'FreqDivider:clock_acucar|clkOut'
+Slack : -6.676
+TNS   : -89.390
+
+Type  : Slow 1200mV 85C Model Setup 'SW[1]'
+Slack : -6.448
+TNS   : -164.264
+
+Type  : Slow 1200mV 85C Model Setup 'SW[2]'
+Slack : -6.269
+TNS   : -162.614
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -3.926
+TNS   : -712.181
+
+Type  : Slow 1200mV 85C Model Setup 'LogicProdutos:escolhaproduto|troco[4]'
+Slack : -3.033
+TNS   : -15.487
+
+Type  : Slow 1200mV 85C Model Setup 'FreqDivider:clockMoedasACair|clkOut'
+Slack : -1.529
+TNS   : -7.993
+
+Type  : Slow 1200mV 85C Model Setup 'FreqDivider:time_resetauto|clkOut'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Slow 1200mV 85C Model Hold 'SW[1]'
+Slack : -2.370
+TNS   : -17.626
+
+Type  : Slow 1200mV 85C Model Hold 'SW[0]'
+Slack : -2.184
+TNS   : -17.068
+
+Type  : Slow 1200mV 85C Model Hold 'SW[2]'
+Slack : -2.052
+TNS   : -17.016
+
+Type  : Slow 1200mV 85C Model Hold 'LogicProdutos:escolhaproduto|troco[4]'
+Slack : -1.295
+TNS   : -5.668
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : -0.027
+TNS   : -0.027
+
+Type  : Slow 1200mV 85C Model Hold 'FreqDivider:time_resetauto|clkOut'
+Slack : 0.406
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FreqDivider:clock_acucar|clkOut'
+Slack : 0.817
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FreqDivider:clockMoedasACair|clkOut'
+Slack : 1.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'DebounceUnit:key0|s_dirtyInput'
+Slack : -2.334
+TNS   : -2.334
+
+Type  : Slow 1200mV 85C Model Recovery 'DebounceUnit:key1|s_dirtyInput'
+Slack : -1.977
+TNS   : -1.977
+
+Type  : Slow 1200mV 85C Model Recovery 'DebounceUnit:key3|s_dirtyInput'
+Slack : -1.917
+TNS   : -1.917
+
+Type  : Slow 1200mV 85C Model Recovery 'DebounceUnit:key2|s_dirtyInput'
+Slack : -1.218
+TNS   : -1.218
+
+Type  : Slow 1200mV 85C Model Recovery 'SW[1]'
+Slack : -0.603
+TNS   : -0.874
+
+Type  : Slow 1200mV 85C Model Recovery 'SW[2]'
+Slack : -0.437
+TNS   : -1.036
+
+Type  : Slow 1200mV 85C Model Recovery 'SW[0]'
+Slack : -0.364
+TNS   : -0.364
+
+Type  : Slow 1200mV 85C Model Recovery 'FreqDivider:time_resetauto|clkOut'
+Slack : 0.261
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'SW[0]'
+Slack : -0.795
+TNS   : -0.795
+
+Type  : Slow 1200mV 85C Model Removal 'SW[2]'
+Slack : -0.794
+TNS   : -1.715
+
+Type  : Slow 1200mV 85C Model Removal 'SW[1]'
+Slack : -0.683
+TNS   : -1.250
+
+Type  : Slow 1200mV 85C Model Removal 'FreqDivider:time_resetauto|clkOut'
+Slack : 0.107
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'DebounceUnit:key2|s_dirtyInput'
+Slack : 1.602
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'DebounceUnit:key3|s_dirtyInput'
+Slack : 2.330
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'DebounceUnit:key1|s_dirtyInput'
+Slack : 2.390
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'DebounceUnit:key0|s_dirtyInput'
+Slack : 2.762
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -328.105
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SW[0]'
+Slack : -3.000
+TNS   : -23.786
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SW[1]'
+Slack : -3.000
+TNS   : -17.027
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SW[2]'
+Slack : -3.000
+TNS   : -15.073
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FreqDivider:clock_acucar|clkOut'
+Slack : -1.285
+TNS   : -20.560
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FreqDivider:clockMoedasACair|clkOut'
+Slack : -1.285
+TNS   : -14.135
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FreqDivider:time_resetauto|clkOut'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DebounceUnit:key0|s_dirtyInput'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DebounceUnit:key1|s_dirtyInput'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DebounceUnit:key2|s_dirtyInput'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DebounceUnit:key3|s_dirtyInput'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'LogicProdutos:escolhaproduto|troco[4]'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'SW[0]'
+Slack : -6.316
+TNS   : -153.111
+
+Type  : Slow 1200mV 0C Model Setup 'FreqDivider:clock_acucar|clkOut'
+Slack : -6.002
+TNS   : -80.058
+
+Type  : Slow 1200mV 0C Model Setup 'SW[1]'
+Slack : -5.929
+TNS   : -152.629
+
+Type  : Slow 1200mV 0C Model Setup 'SW[2]'
+Slack : -5.772
+TNS   : -150.737
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -3.463
+TNS   : -626.391
+
+Type  : Slow 1200mV 0C Model Setup 'LogicProdutos:escolhaproduto|troco[4]'
+Slack : -2.859
+TNS   : -14.607
+
+Type  : Slow 1200mV 0C Model Setup 'FreqDivider:clockMoedasACair|clkOut'
+Slack : -1.158
+TNS   : -6.290
+
+Type  : Slow 1200mV 0C Model Setup 'FreqDivider:time_resetauto|clkOut'
+Slack : 0.089
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SW[1]'
+Slack : -2.122
+TNS   : -14.989
+
+Type  : Slow 1200mV 0C Model Hold 'SW[0]'
+Slack : -1.921
+TNS   : -15.010
+
+Type  : Slow 1200mV 0C Model Hold 'SW[2]'
+Slack : -1.772
+TNS   : -14.481
+
+Type  : Slow 1200mV 0C Model Hold 'LogicProdutos:escolhaproduto|troco[4]'
+Slack : -0.984
+TNS   : -4.115
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.055
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FreqDivider:time_resetauto|clkOut'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FreqDivider:clock_acucar|clkOut'
+Slack : 0.754
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FreqDivider:clockMoedasACair|clkOut'
+Slack : 1.128
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'DebounceUnit:key0|s_dirtyInput'
+Slack : -2.091
+TNS   : -2.091
+
+Type  : Slow 1200mV 0C Model Recovery 'DebounceUnit:key1|s_dirtyInput'
+Slack : -1.772
+TNS   : -1.772
+
+Type  : Slow 1200mV 0C Model Recovery 'DebounceUnit:key3|s_dirtyInput'
+Slack : -1.718
+TNS   : -1.718
+
+Type  : Slow 1200mV 0C Model Recovery 'DebounceUnit:key2|s_dirtyInput'
+Slack : -1.078
+TNS   : -1.078
+
+Type  : Slow 1200mV 0C Model Recovery 'SW[1]'
+Slack : -0.452
+TNS   : -0.751
+
+Type  : Slow 1200mV 0C Model Recovery 'SW[2]'
+Slack : -0.407
+TNS   : -0.898
+
+Type  : Slow 1200mV 0C Model Recovery 'SW[0]'
+Slack : -0.232
+TNS   : -0.232
+
+Type  : Slow 1200mV 0C Model Recovery 'FreqDivider:time_resetauto|clkOut'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'SW[2]'
+Slack : -0.733
+TNS   : -1.567
+
+Type  : Slow 1200mV 0C Model Removal 'SW[0]'
+Slack : -0.705
+TNS   : -0.705
+
+Type  : Slow 1200mV 0C Model Removal 'SW[1]'
+Slack : -0.625
+TNS   : -1.122
+
+Type  : Slow 1200mV 0C Model Removal 'FreqDivider:time_resetauto|clkOut'
+Slack : 0.081
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'DebounceUnit:key2|s_dirtyInput'
+Slack : 1.534
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'DebounceUnit:key3|s_dirtyInput'
+Slack : 2.197
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'DebounceUnit:key1|s_dirtyInput'
+Slack : 2.253
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'DebounceUnit:key0|s_dirtyInput'
+Slack : 2.584
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -328.105
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SW[0]'
+Slack : -3.000
+TNS   : -19.884
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SW[1]'
+Slack : -3.000
+TNS   : -13.872
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SW[2]'
+Slack : -3.000
+TNS   : -12.250
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FreqDivider:clock_acucar|clkOut'
+Slack : -1.285
+TNS   : -20.560
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FreqDivider:clockMoedasACair|clkOut'
+Slack : -1.285
+TNS   : -14.135
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FreqDivider:time_resetauto|clkOut'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:key0|s_dirtyInput'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:key1|s_dirtyInput'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:key2|s_dirtyInput'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:key3|s_dirtyInput'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'LogicProdutos:escolhaproduto|troco[4]'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FreqDivider:clock_acucar|clkOut'
+Slack : -3.532
+TNS   : -47.899
+
+Type  : Fast 1200mV 0C Model Setup 'SW[0]'
+Slack : -2.846
+TNS   : -63.442
+
+Type  : Fast 1200mV 0C Model Setup 'SW[1]'
+Slack : -2.617
+TNS   : -61.083
+
+Type  : Fast 1200mV 0C Model Setup 'SW[2]'
+Slack : -2.531
+TNS   : -60.525
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -2.220
+TNS   : -257.381
+
+Type  : Fast 1200mV 0C Model Setup 'LogicProdutos:escolhaproduto|troco[4]'
+Slack : -1.230
+TNS   : -5.951
+
+Type  : Fast 1200mV 0C Model Setup 'FreqDivider:clockMoedasACair|clkOut'
+Slack : -0.725
+TNS   : -3.351
+
+Type  : Fast 1200mV 0C Model Setup 'FreqDivider:time_resetauto|clkOut'
+Slack : 0.505
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SW[1]'
+Slack : -1.494
+TNS   : -15.092
+
+Type  : Fast 1200mV 0C Model Hold 'SW[0]'
+Slack : -1.487
+TNS   : -10.414
+
+Type  : Fast 1200mV 0C Model Hold 'SW[2]'
+Slack : -1.383
+TNS   : -14.850
+
+Type  : Fast 1200mV 0C Model Hold 'LogicProdutos:escolhaproduto|troco[4]'
+Slack : -0.906
+TNS   : -4.206
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.167
+TNS   : -0.321
+
+Type  : Fast 1200mV 0C Model Hold 'FreqDivider:time_resetauto|clkOut'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FreqDivider:clock_acucar|clkOut'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FreqDivider:clockMoedasACair|clkOut'
+Slack : 0.759
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'DebounceUnit:key0|s_dirtyInput'
+Slack : -0.898
+TNS   : -0.898
+
+Type  : Fast 1200mV 0C Model Recovery 'DebounceUnit:key1|s_dirtyInput'
+Slack : -0.687
+TNS   : -0.687
+
+Type  : Fast 1200mV 0C Model Recovery 'DebounceUnit:key3|s_dirtyInput'
+Slack : -0.640
+TNS   : -0.640
+
+Type  : Fast 1200mV 0C Model Recovery 'SW[1]'
+Slack : -0.428
+TNS   : -0.428
+
+Type  : Fast 1200mV 0C Model Recovery 'SW[2]'
+Slack : -0.360
+TNS   : -0.360
+
+Type  : Fast 1200mV 0C Model Recovery 'SW[0]'
+Slack : -0.327
+TNS   : -0.327
+
+Type  : Fast 1200mV 0C Model Recovery 'DebounceUnit:key2|s_dirtyInput'
+Slack : -0.224
+TNS   : -0.224
+
+Type  : Fast 1200mV 0C Model Recovery 'FreqDivider:time_resetauto|clkOut'
+Slack : 0.643
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'SW[2]'
+Slack : -0.406
+TNS   : -0.871
+
+Type  : Fast 1200mV 0C Model Removal 'SW[0]'
+Slack : -0.390
+TNS   : -0.390
+
+Type  : Fast 1200mV 0C Model Removal 'SW[1]'
+Slack : -0.359
+TNS   : -0.664
+
+Type  : Fast 1200mV 0C Model Removal 'FreqDivider:time_resetauto|clkOut'
+Slack : -0.030
+TNS   : -0.060
+
+Type  : Fast 1200mV 0C Model Removal 'DebounceUnit:key2|s_dirtyInput'
+Slack : 0.873
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'DebounceUnit:key3|s_dirtyInput'
+Slack : 1.306
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'DebounceUnit:key1|s_dirtyInput'
+Slack : 1.352
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'DebounceUnit:key0|s_dirtyInput'
+Slack : 1.570
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -325.738
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SW[1]'
+Slack : -3.000
+TNS   : -18.342
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SW[0]'
+Slack : -3.000
+TNS   : -10.885
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SW[2]'
+Slack : -3.000
+TNS   : -10.432
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FreqDivider:clock_acucar|clkOut'
+Slack : -1.000
+TNS   : -16.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FreqDivider:clockMoedasACair|clkOut'
+Slack : -1.000
+TNS   : -11.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FreqDivider:time_resetauto|clkOut'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:key0|s_dirtyInput'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:key1|s_dirtyInput'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:key2|s_dirtyInput'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:key3|s_dirtyInput'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'LogicProdutos:escolhaproduto|troco[4]'
+Slack : 0.311
+TNS   : 0.000
+
+------------------------------------------------------------

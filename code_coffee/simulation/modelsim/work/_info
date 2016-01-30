@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dB:\Dropbox\PROJECTO_lsd\trabalho final\simulation\modelsim
+Etestbench_logicprodutos
+w1401581782
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dB:\Dropbox\PROJECTO_lsd\trabalho final\simulation\modelsim
+8B:/Dropbox/PROJECTO_lsd/trabalho final/TestBench_LogicProdutos.vhd
+FB:/Dropbox/PROJECTO_lsd/trabalho final/TestBench_LogicProdutos.vhd
+l0
+L4
+Vl^2J_bNXhTJbK5XMFKUM<0
+!s100 k;@HJ[1ggj?a[oiHl95kz1
+Z4 OV;C;10.1d;51
+32
+!i10b 1
+!s108 1401578671.748000
+!s90 -reportprogress|300|-work|work|B:/Dropbox/PROJECTO_lsd/trabalho final/TestBench_LogicProdutos.vhd|
+!s107 B:/Dropbox/PROJECTO_lsd/trabalho final/TestBench_LogicProdutos.vhd|
+Z5 o-work work -O0
+Z6 tExplicit 1
+Etestbench_logictroco
+w1401581722
+R1
+R2
+R3
+8B:/Dropbox/PROJECTO_lsd/trabalho final/TestBench_LogicTroco.vhd
+FB:/Dropbox/PROJECTO_lsd/trabalho final/TestBench_LogicTroco.vhd
+l0
+L4
+VC;i`^BjgS[N2gaV;6d_bh1
+R4
+32
+R5
+R6
+!s100 gzJ13QP_MUOU?`J@D2k0>3
+!i10b 1
+!s108 1401578657.372000
+!s90 -reportprogress|300|-work|work|B:/Dropbox/PROJECTO_lsd/trabalho final/TestBench_LogicTroco.vhd|
+!s107 B:/Dropbox/PROJECTO_lsd/trabalho final/TestBench_LogicTroco.vhd|

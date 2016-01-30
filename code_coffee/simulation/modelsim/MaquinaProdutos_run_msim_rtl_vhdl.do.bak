@@ -1,0 +1,16 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/ruben/Desktop/l/Bin7SegDecoder.vhd}
+vcom -93 -work work {C:/Users/ruben/Desktop/l/DebounceUnit.vhd}
+vcom -93 -work work {C:/Users/ruben/Desktop/l/FreqDivider.vhd}
+vcom -93 -work work {C:/Users/ruben/Desktop/l/LogicAcucar.vhd}
+vcom -93 -work work {C:/Users/ruben/Desktop/l/LogicProdutos.vhd}
+vcom -93 -work work {C:/Users/ruben/Desktop/l/LogicTroco.vhd}
+vcom -93 -work work {C:/Users/ruben/Desktop/l/PEncAdapt.vhd}
+vcom -93 -work work {C:/Users/ruben/Desktop/l/maquinaDeCafe.vhd}
+
