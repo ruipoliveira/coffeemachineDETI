@@ -9,4 +9,4 @@ Application used: Altera Quartus II
 
 [Apresentation project](https://github.com/ruipoliveira/coffeemachineDETI/blob/master/apresentation_versionPT.pdf)
 
- 2014 Rui Oliveira
+ 2014 | Rui Oliveira and Rúben Miranda 
